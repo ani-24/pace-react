@@ -1,0 +1,154 @@
+@use "./../variables/" as *;
+
+.main-nav {
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 0 10%;
+  .logo {
+    height: 65%;
+    img {
+      height: 100%;
+    }
+  }
+  .desktop-nav {
+    display: none;
+    &.nav-list {
+      list-style: none;
+      justify-self: end;
+      .nav-item {
+        margin: 0 15px;
+        overflow: hidden;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .nav-link {
+          position: relative;
+          text-decoration: none;
+          color: transparent;
+          transition: transform 300ms ease-out;
+          &::before,
+          &::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 300ms ease-out;
+            color: $dark;
+          }
+          &::before {
+            top: 0%;
+          }
+          &::after {
+            top: 100%;
+          }
+        }
+        &:hover {
+          .nav-link {
+            &::before,
+            &::after {
+              transform: translateY(-100%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .hamburger_menu {
+    height: 1rem;
+    width: 2.5rem;
+    border: 1px;
+    justify-self: end;
+    position: relative;
+    cursor: pointer;
+    z-index: 11;
+    .bar {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $black;
+      transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms,
+        transform 250ms ease-in-out;
+      &#bar-1 {
+        top: 0;
+      }
+      &#bar-2 {
+        top: 100%;
+      }
+    }
+    &.cross {
+      .bar {
+        background: $light;
+        transition: background 250ms ease-in-out, top 250ms ease-in-out,
+          transform 250ms ease-in-out 250ms;
+        &#bar-1 {
+          top: 50%;
+          transform: rotate(-45deg);
+        }
+        &#bar-2 {
+          top: 50%;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  @media (min-width: 1050px) {
+    & {
+      .nav-list {
+        display: flex;
+      }
+      .hamburger_menu {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      .logo {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.sidenav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  background: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 250ms ease-out;
+  .nav-list {
+    list-style: none;
+    text-align: center;
+    .nav-item {
+      font-size: 2rem;
+      margin: 2em 0;
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: $light;
+        font-family: $limelight;
+      }
+    }
+  }
+  &.show {
+    right: 0;
+  }
+}

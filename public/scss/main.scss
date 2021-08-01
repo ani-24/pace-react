@@ -1,7 +1,14 @@
+@use "./components/" as *;
+@use "./variables/" as *;
+@use "./vendors/" as *;
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: $poppins;
 }
