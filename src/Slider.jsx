@@ -5,7 +5,7 @@ const slidercells = (img) => {
   return (
     <>
       <div className="carousel-img">
-        <img src={img.src} alt={img.alt} />
+        <img key={img.id} src={img.src} alt={img.alt} />
       </div>
     </>
   );
@@ -14,7 +14,7 @@ const slidercells = (img) => {
 const Slider = () => {
   return (
     <>
-      <div className="carousel" data-flickity>
+      <div className="carousel" data-flickity='{"imagesLoaded": "true"}'>
         {ImgData.map(slidercells)}
       </div>
     </>
