@@ -1,11 +1,29 @@
 import React from "react";
 import Header from "./Header";
-import Slider from "./Slider";
+import VideoData from "./Demo-video-data";
+
+const getVideos = (video, idx) => {
+  return (
+    <>
+      <div className="video-container">
+        <div className="video-poster">
+          <img key={idx} src={video.poster} alt="" />
+        </div>
+        <div className="video-description">
+          <p>{video.desc}</p>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const HeroSection = () => {
   return (
     <>
       <div className="hero-section">
+        <div className="hero-img">
+          <img src="./img/english.svg" alt="Learn English" />
+        </div>
         <div className="hero-text">
           <h1 className="hero-heading">Why Learn English?</h1>
           <p className="hero-desc">
@@ -24,11 +42,25 @@ const HeroSection = () => {
   );
 };
 
+const Showcase = () => {
+  return (
+    <>
+      <section className="showcase">
+        <div className="section-heading">
+          <h1>Demo Lectures</h1>
+        </div>
+        {VideoData.map(getVideos)}
+      </section>
+    </>
+  );
+};
+
 const Home = () => {
   return (
     <>
       <Header />
       <HeroSection />
+      <Showcase />
     </>
   );
 };

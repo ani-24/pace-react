@@ -1,0 +1,83 @@
+@use "./../variables/" as *;
+
+.hero-section {
+  width: 100%;
+  padding: 5%;
+  .hero-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .hero-text {
+    margin-top: 1.25em;
+    text-align: center;
+    .hero-heading {
+      color: $heading-clr-dark;
+      font-weight: 900;
+    }
+    .hero-desc {
+      color: $text-clr-dark;
+      margin-top: 1em;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .hero-text {
+        flex: 1;
+        text-align: start;
+      }
+      .hero-img {
+        flex: 1;
+      }
+    }
+  }
+}
+
+section {
+  margin: 2em 5%;
+  &.showcase {
+    .section-heading {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2.5em;
+      display: block;
+      h1 {
+        padding-bottom: 0.5em;
+        position: relative;
+        display: inline;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          width: 80%;
+          height: 1px;
+          background: $logo-clr;
+        }
+      }
+    }
+    .video-container {
+      height: 100%;
+      background: $heading-clr-light;
+      padding: 10%;
+      margin-top: 40%;
+      .video-poster {
+        position: relative;
+        width: 100%;
+        margin-top: -50%;
+        img {
+          width: 100%;
+        }
+      }
+      .video-description {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

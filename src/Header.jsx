@@ -6,9 +6,9 @@ const Header = () => {
     <>
       <nav className="main-nav">
         <div className="logo">
-          <a href="#">
-            <img src="./img/pace_logo.png" alt="Pace Institute" />
-          </a>
+          <NavLink className="logo-text" to="/">
+            Pace
+          </NavLink>
         </div>
         <ul className="desktop-nav nav-list">
           <li className="nav-item">

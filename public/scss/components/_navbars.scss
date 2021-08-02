@@ -8,11 +8,14 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 0 10%;
+  padding: 0.5em 5%;
   .logo {
-    height: 65%;
-    img {
-      height: 100%;
+    .logo-text {
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-decoration: none;
+      color: $logo-clr;
+      font-family: $prata;
     }
   }
   .desktop-nav {
@@ -42,7 +45,7 @@
             width: 100%;
             height: 100%;
             transition: transform 300ms ease-out;
-            color: $dark;
+            color: $text-clr-dark;
           }
           &::before {
             top: 0%;
@@ -74,7 +77,7 @@
       position: absolute;
       height: 2px;
       width: 100%;
-      background: $black;
+      background: $heading-clr-dark;
       transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms,
         transform 250ms ease-in-out;
       &#bar-1 {
@@ -86,7 +89,7 @@
     }
     &.cross {
       .bar {
-        background: $light;
+        background: $heading-clr-light;
         transition: background 250ms ease-in-out, top 250ms ease-in-out,
           transform 250ms ease-in-out 250ms;
         &#bar-1 {
@@ -127,7 +130,7 @@
   right: -100%;
   height: 100vh;
   width: 100%;
-  background: $dark;
+  background: darken($color: $heading-clr-dark, $amount: 7%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +147,7 @@
       }
       .nav-link {
         text-decoration: none;
-        color: $light;
+        color: $heading-clr-light;
         font-family: $limelight;
       }
     }

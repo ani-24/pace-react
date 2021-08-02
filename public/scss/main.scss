@@ -1,6 +1,7 @@
 @use "./components/" as *;
 @use "./variables/" as *;
 @use "./vendors/" as *;
+@use "./pages/" as *;
 *,
 *::before,
 *::after {
@@ -11,4 +12,5 @@
 
 body {
   font-family: $poppins;
+  font-weight: 300;
 }
