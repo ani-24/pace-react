@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,37 +12,37 @@ const Header = () => {
         </div>
         <ul className="desktop-nav nav-list">
           <li className="nav-item">
-            <a href="/" className="nav-link" data-text="Home">
+            <NavLink to="/" className="nav-link" data-text="Home">
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/courses" className="nav-link" data-text="Courses">
+            <NavLink to="/courses" className="nav-link" data-text="Courses">
               Courses
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a
-              href="/video-gallery"
+            <NavLink
+              to="/video-gallery"
               className="nav-link"
               data-text="Video Gallery"
             >
               Video Gallery
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a
-              href="/image-gallery"
+            <NavLink
+              to="/image-gallery"
               className="nav-link"
               data-text="Image Gallery"
             >
               Image Gallery
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-link" data-text="About Pace">
+            <NavLink to="/about" className="nav-link" data-text="About Pace">
               About Pace
-            </a>
+            </NavLink>
           </li>
         </ul>
         <div className="hamburger_menu">
@@ -52,29 +53,29 @@ const Header = () => {
       <div className="sidenav">
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="/" className="nav-link">
+            <NavLink to="/" className="nav-link">
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/courses" className="nav-link">
+            <NavLink to="/courses" className="nav-link">
               Courses
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/video-gallery" className="nav-link">
+            <NavLink to="/video-gallery" className="nav-link">
               Video Gallery
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/image-gallery" className="nav-link">
+            <NavLink to="/image-gallery" className="nav-link">
               Image Gallery
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-link">
+            <NavLink to="/about" className="nav-link">
               About Pace
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
