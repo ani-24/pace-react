@@ -125,6 +125,7 @@
 }
 
 .sidenav {
+  overflow: auto;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -162,6 +163,16 @@
 }
 .sidenav.show {
   right: 0;
+}
+
+.carousel {
+  width: 100vw;
+}
+.carousel .carousel-img {
+  width: 100%;
+}
+.carousel .carousel-img img {
+  width: 100%;
 }
 
 *,
