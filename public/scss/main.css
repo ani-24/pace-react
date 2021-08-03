@@ -17,7 +17,7 @@
   text-transform: uppercase;
   font-size: 3rem;
   text-decoration: none;
-  color: #000000;
+  color: #00bfa6;
   font-family: "Prata", serif;
 }
 .main-nav .desktop-nav {
@@ -56,7 +56,7 @@
   transition: -webkit-transform 300ms ease-out;
   transition: transform 300ms ease-out;
   transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
-  color: #444;
+  color: #aaa;
 }
 .main-nav .desktop-nav.nav-list .nav-item .nav-link::before {
   top: 0%;
@@ -81,7 +81,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #212121;
+  background: #f7f7f7;
   -webkit-transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out;
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out;
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, transform 250ms ease-in-out;
@@ -192,11 +192,11 @@
   text-align: center;
 }
 .hero-section .hero-text .hero-heading {
-  color: #212121;
+  color: #f7f7f7;
   font-weight: 900;
 }
 .hero-section .hero-text .hero-desc {
-  color: #444;
+  color: #aaa;
   margin-top: 1em;
   line-height: 25px;
 }
@@ -232,7 +232,7 @@ section {
 section.showcase .section-heading {
   font-weight: 600;
   text-align: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2.3em;
   display: block;
 }
 section.showcase .section-heading h1 {
@@ -247,13 +247,14 @@ section.showcase .section-heading h1::after {
   left: 10%;
   width: 80%;
   height: 1px;
-  background: #000000;
+  background: #f7f7f7;
 }
 section.showcase .video-container {
   height: 100%;
-  background: #f7f7f7;
+  background: #0f0e14;
   padding: 10%;
   margin-top: 40%;
+  margin: 45% auto 0 auto;
 }
 section.showcase .video-container .video-poster {
   position: relative;
@@ -266,7 +267,71 @@ section.showcase .video-container .video-poster img {
 section.showcase .video-container .video-description {
   padding: 10px;
   text-align: center;
-  font-size: 1.2rem;
+}
+@media (min-width: 600px) {
+  section.showcase .video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: transparent;
+    position: relative;
+    margin: 2em auto;
+    padding: 17% 0;
+    max-height: 25rem;
+  }
+  section.showcase .video-container::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 0;
+    right: 0;
+    background: #0f0e14;
+    z-index: -1;
+  }
+  section.showcase .video-container .video-poster {
+    height: 100%;
+    width: auto;
+    margin-top: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  section.showcase .video-container .video-poster img {
+    height: 100%;
+    width: auto;
+  }
+  section.showcase .video-container .video-description {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  section.showcase .video-container .video-description p {
+    font-size: 1.3rem;
+  }
+  section.showcase .video-container:last-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  section.showcase .video-container:last-child::after {
+    left: 0;
+  }
+}
+@media (min-width: 992px) {
+  section.showcase .video-container {
+    width: 80%;
+  }
+  section.showcase .video-container .video-description p {
+    font-size: 1.5rem;
+  }
 }
 
 *,
@@ -281,6 +346,8 @@ section.showcase .video-container .video-description {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  background: #191923;
+  color: #f7f7f7;
 }
 
 p {

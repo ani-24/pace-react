@@ -22,7 +22,7 @@ const HeroSection = () => {
     <>
       <div className="hero-section">
         <div className="hero-img">
-          <img src="./img/english.svg" alt="Learn English" />
+          <img src="./img/knowledge.svg" alt="Learn English" />
         </div>
         <div className="hero-text">
           <h1 className="hero-heading">Why Learn English?</h1>
