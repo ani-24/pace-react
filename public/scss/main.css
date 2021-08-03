@@ -306,6 +306,9 @@ section.showcase .video-container .video-description {
     height: 100%;
     width: auto;
   }
+  section.showcase .video-container .video-description {
+    padding: 25px;
+  }
   section.showcase .video-container:last-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;

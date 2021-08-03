@@ -110,6 +110,9 @@ section {
               width: auto;
             }
           }
+          .video-description {
+            padding: 25px;
+          }
           &:last-child {
             flex-direction: row-reverse;
             margin-top: 2em;
