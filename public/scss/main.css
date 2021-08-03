@@ -301,6 +301,7 @@ section.showcase .video-container .video-description {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    position: relative;
   }
   section.showcase .video-container .video-poster img {
     height: 100%;

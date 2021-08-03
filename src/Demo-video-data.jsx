@@ -17,7 +17,6 @@ const VideoData = [
 
 VideoData.forEach((vid) => {
   vid.poster = getIdByUrl(vid.link);
-  console.log(vid);
 });
 
 export default VideoData;

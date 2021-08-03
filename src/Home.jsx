@@ -5,9 +5,9 @@ import VideoData from "./Demo-video-data";
 const getVideos = (video, idx) => {
   return (
     <>
-      <div className="video-container">
+      <div className="video-container" key={idx}>
         <div className="video-poster">
-          <img key={idx} src={video.poster} alt="" />
+          <img src={video.poster} alt="" />
         </div>
         <div className="video-description">
           <p>{video.desc}</p>
