@@ -10,12 +10,16 @@
   align-items: center;
   padding: 0.5em 5%;
   .logo {
-    .logo-text {
-      text-transform: uppercase;
-      font-size: 3rem;
-      text-decoration: none;
-      color: $green;
-      font-family: $prata;
+    height: 65%;
+    // .logo-text {
+    //   text-transform: uppercase;
+    //   font-size: 3rem;
+    //   text-decoration: none;
+    //   color: $green;
+    //   font-family: $prata;
+    // }
+    img {
+      height: 100%;
     }
   }
   .desktop-nav {

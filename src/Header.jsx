@@ -2,12 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const toggleNav = () => {
+    const hamburger = document.querySelector(".hamburger_menu");
+    const sidenav = document.querySelector(".sidenav");
+    hamburger.classList.toggle("cross");
+    sidenav.classList.toggle("show");
+  };
   return (
     <>
       <nav className="main-nav">
         <div className="logo">
           <NavLink className="logo-text" to="/">
-            Pace
+            <img src="./img/pace_logo.png" alt="" />
           </NavLink>
         </div>
         <ul className="desktop-nav nav-list">
@@ -45,7 +51,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="hamburger_menu">
+        <div className="hamburger_menu" onClick={toggleNav}>
           <div className="bar" id="bar-1"></div>
           <div className="bar" id="bar-2"></div>
         </div>

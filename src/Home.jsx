@@ -26,6 +26,9 @@ const HeroSection = () => {
         </div>
         <div className="hero-text">
           <h1 className="hero-heading">Why Learn English?</h1>
+          <p className="hero-subtitle">
+            English for all age groups & all levels of exams
+          </p>
           <p className="hero-desc">
             English has become the leading international language. It has
             developed over the period of more than 1,400 years. English language
