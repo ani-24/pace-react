@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: $green;
+  color: $heading-clr-dark;
+}
+
 body {
   font-family: $poppins;
   font-weight: 300;

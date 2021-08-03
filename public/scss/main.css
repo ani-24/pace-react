@@ -335,6 +335,16 @@ section.showcase .video-container .video-description {
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #00bfa6;
+  color: #212121;
+}
+
+::selection {
+  background: #00bfa6;
+  color: #212121;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
