@@ -259,9 +259,34 @@ section.showcase .video-container .video-poster {
   position: relative;
   width: 100%;
   margin-top: -50%;
+  cursor: pointer;
 }
 section.showcase .video-container .video-poster img {
   width: 100%;
+  display: block;
+}
+section.showcase .video-container .video-poster .play-icon {
+  z-index: 2;
+  color: #00bfa6;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 2em;
+  width: 2em;
+  background: #004037;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.showcase .video-container .video-description {
   padding: 10px;
@@ -301,7 +326,6 @@ section.showcase .video-container .video-description {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    position: relative;
   }
   section.showcase .video-container .video-poster img {
     height: 100%;
@@ -354,6 +378,10 @@ body {
   font-weight: 300;
   background: #191923;
   color: #f7f7f7;
+}
+body.unscroll {
+  overflow: hidden;
+  position: fixed;
 }
 
 p {

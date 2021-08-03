@@ -20,6 +20,10 @@ body {
   font-weight: 300;
   background: darken($color: $night-blue, $amount: 10%);
   color: $heading-clr-light;
+  &.unscroll {
+    overflow: hidden;
+    position: fixed;
+  }
 }
 
 p {

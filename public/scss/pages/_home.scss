@@ -71,8 +71,26 @@ section {
         position: relative;
         width: 100%;
         margin-top: -50%;
+        cursor: pointer;
         img {
           width: 100%;
+          display: block;
+        }
+        .play-icon {
+          z-index: 2;
+          color: $green;
+          font-size: 3rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 2em;
+          width: 2em;
+          background: darken($color: $green, $amount: 25%);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
       .video-description {
@@ -106,7 +124,6 @@ section {
             width: auto;
             margin-top: 0;
             flex: 1;
-            position: relative;
             img {
               height: 100%;
               width: auto;

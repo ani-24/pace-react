@@ -1,12 +1,17 @@
 import React from "react";
 import Header from "./Header";
 import VideoData from "./Demo-video-data";
+import GetVidFromId from "./Vidfromlink";
+import popup from "./Modal-popup";
 
 const getVideos = (video, idx) => {
   return (
     <>
       <div className="video-container" key={idx}>
-        <div className="video-poster">
+        <div className="video-poster" onClick={popup(GetVidFromId(video.link))}>
+          <div className=" play-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
           <img src={video.poster} alt="" />
         </div>
         <div className="video-description">

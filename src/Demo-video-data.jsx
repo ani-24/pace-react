@@ -1,6 +1,6 @@
 function getIdByUrl(url) {
-  let id = url.split("/");
-  let imgUrl = `https://i.ytimg.com/vi/${id[3]}/hqdefault.jpg`;
+  let id = url.split("/")[3];
+  let imgUrl = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
   return imgUrl;
 }
 
