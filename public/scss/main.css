@@ -252,9 +252,8 @@ section.showcase .section-heading h1::after {
 section.showcase .video-container {
   height: 100%;
   background: #0f0e14;
-  padding: 10%;
-  margin-top: 40%;
-  margin: 45% auto 0 auto;
+  padding: 20% 10%;
+  margin: 30% auto 0 auto;
 }
 section.showcase .video-container .video-poster {
   position: relative;
@@ -268,7 +267,7 @@ section.showcase .video-container .video-description {
   padding: 10px;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   section.showcase .video-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,30 +306,23 @@ section.showcase .video-container .video-description {
     height: 100%;
     width: auto;
   }
-  section.showcase .video-container .video-description {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  section.showcase .video-container .video-description p {
-    font-size: 1.3rem;
-  }
   section.showcase .video-container:last-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-top: 2em;
   }
   section.showcase .video-container:last-child::after {
     left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
   section.showcase .video-container {
     width: 80%;
   }
   section.showcase .video-container .video-description p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
