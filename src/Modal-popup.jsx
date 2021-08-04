@@ -10,7 +10,7 @@ const popup = (el) => {
   modal.innerHTML = el;
   modal.setAttribute(
     "style",
-    "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 101;"
+    "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 101; display: flex; justify-content: center; align-items: center;"
   );
   document.body.classList.add("unscroll");
   document.body.appendChild(overlay);
@@ -20,7 +20,7 @@ const popup = (el) => {
     document.body.removeChild(modal);
     document.body.classList.remove("unscroll");
   });
-  console.log("something");
+  console.log("something from modal popup");
 };
 
 export default popup;

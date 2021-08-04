@@ -5,12 +5,15 @@ import GetVidFromId from "./Vidfromlink";
 import popup from "./Modal-popup";
 
 const getVideos = (video, idx) => {
+  const showVideo = () => {
+    popup(GetVidFromId(video.link));
+  };
   return (
     <>
       <div className="video-container" key={idx}>
-        <div className="video-poster" onClick={popup(GetVidFromId(video.link))}>
+        <div className="video-poster" onClick={showVideo}>
           <div className=" play-icon">
-            <i class="fas fa-play-circle"></i>
+            <i className="fas fa-play-circle"></i>
           </div>
           <img src={video.poster} alt="" />
         </div>

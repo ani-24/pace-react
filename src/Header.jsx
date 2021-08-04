@@ -7,6 +7,13 @@ const Header = () => {
     const sidenav = document.querySelector(".sidenav");
     hamburger.classList.toggle("cross");
     sidenav.classList.toggle("show");
+    const scrollY = document.body.style.top;
+    if (sidenav.classList.contains("show")) {
+      window.scrollTo(0, scrollY);
+      document.body.classList.add("unscroll");
+    } else {
+      document.body.classList.remove("unscroll");
+    }
   };
   return (
     <>

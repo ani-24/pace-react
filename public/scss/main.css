@@ -176,6 +176,72 @@
   width: 100%;
 }
 
+.video-poster {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.video-poster img {
+  width: 100%;
+  display: block;
+}
+.video-poster .play-icon {
+  z-index: 2;
+  color: #00bfa6;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 1.5em;
+  width: 1.5em;
+  background: rgba(0, 64, 55, 0.7);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.video-poster:hover .play-icon {
+  height: 150%;
+  width: 150%;
+}
+.video-poster:hover .play-icon i {
+  -webkit-animation: rotate 1s infinite linear;
+          animation: rotate 1s infinite linear;
+}
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.video-embed {
+  width: 90%;
+  max-width: 992px;
+}
+@supports (aspect-ratio: 16/9) {
+  .video-embed {
+    aspect-ratio: 16/9;
+  }
+}
+
 .hero-section {
   width: 100%;
   padding: 5%;
@@ -256,37 +322,7 @@ section.showcase .video-container {
   margin: 30% auto 0 auto;
 }
 section.showcase .video-container .video-poster {
-  position: relative;
-  width: 100%;
   margin-top: -50%;
-  cursor: pointer;
-}
-section.showcase .video-container .video-poster img {
-  width: 100%;
-  display: block;
-}
-section.showcase .video-container .video-poster .play-icon {
-  z-index: 2;
-  color: #00bfa6;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 2em;
-  width: 2em;
-  background: #004037;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 section.showcase .video-container .video-description {
   padding: 10px;

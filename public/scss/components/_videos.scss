@@ -1,0 +1,53 @@
+@use "./../variables/" as *;
+
+.video-poster {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: block;
+  }
+  .play-icon {
+    z-index: 2;
+    color: $green;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.5em;
+    width: 1.5em;
+    background: darken($color: rgba($color: $green, $alpha: 0.7), $amount: 25%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms ease-in-out;
+  }
+  &:hover {
+    .play-icon {
+      height: 150%;
+      width: 150%;
+      i {
+        animation: rotate 1s infinite linear;
+        @keyframes rotate {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-embed {
+  width: 90%;
+  max-width: 992px;
+  @supports (aspect-ratio: 16/9) {
+    & {
+      aspect-ratio: 16/9;
+    }
+  }
+}
