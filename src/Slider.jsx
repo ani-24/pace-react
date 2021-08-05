@@ -5,7 +5,7 @@ const slidercells = (data) => {
   return (
     <>
       <div className="carousel-cell">
-        <h1 className="carousel-heading">{data.title}</h1>
+        <h3 className="carousel-heading">{data.title}</h3>
         <p className="carousel-body">{data.body}</p>
       </div>
     </>

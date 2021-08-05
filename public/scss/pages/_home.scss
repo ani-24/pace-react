@@ -132,34 +132,37 @@ section {
       }
     }
   }
-}
-
-.carousel {
-  width: 100%;
-  margin: 0 auto;
-  .carousel-cell {
-    text-align: center;
-    padding: 2em;
-    width: 100%;
-    min-height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    .carousel-body {
-      color: $text-clr-light;
-    }
-  }
-  .flickity-button {
-    background: transparent;
-    .flickity-button-icon {
-      color: $text-clr-light;
-    }
-  }
-  @media (min-width: 1100px) {
-    & {
-      margin-top: 60px;
-      width: 80%;
+  &.feedback {
+    .section-heading {
+      font-size: 1rem;
+      @media (min-width: 600px) {
+        & {
+          .section-heading {
+            font-size: 1.5rem;
+          }
+          .carousel {
+            .carousel-cell {
+              .carousel-body {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 800px) {
+        & {
+          .carousel {
+            .carousel-cell {
+              .carousel-heading {
+                font-size: 1.4rem;
+              }
+              .carousel-body {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
