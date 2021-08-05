@@ -1,0 +1,78 @@
+@use "./../variables" as *;
+
+.footer {
+  background: $night-blue;
+  .footer-top {
+    .column {
+      width: 100%;
+      text-align: start;
+      padding: 1em 2em;
+      .column-heading {
+        font-size: 1.3rem;
+        color: $heading-clr-light;
+        margin-bottom: 1em;
+      }
+      .column-body {
+        color: $text-clr-light;
+        font-size: 0.9rem;
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 10px;
+            i {
+              margin-right: 0.5em;
+            }
+            a {
+              text-decoration: none;
+              color: $text-clr-light;
+              padding-bottom: 5px;
+              position: relative;
+              color: $green;
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 1px;
+                width: 0;
+                transition: 250ms ease-out;
+                background: $green;
+              }
+              &:hover::after {
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
+        }
+        &.address {
+          .map {
+            border: 0;
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, min-content);
+      }
+    }
+    @media (min-width: 1400px) {
+      & {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darken($color: $night-blue, $amount: 5%);
+    padding: 1em;
+  }
+}

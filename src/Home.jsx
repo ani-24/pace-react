@@ -3,6 +3,8 @@ import Header from "./Header";
 import VideoData from "./Demo-video-data";
 import GetVidFromId from "./Vidfromlink";
 import popup from "./Modal-popup";
+import Slider from "./Slider";
+import Footer from "./Footer";
 
 const getVideos = (video, idx) => {
   const showVideo = () => {
@@ -63,12 +65,33 @@ const Showcase = () => {
   );
 };
 
-const Home = () => {
+const Feedback = () => {
   return (
     <>
+      <section className="feedback">
+        <div className="section-heading">
+          <h1>Feedback from Students</h1>
+          <Slider />
+        </div>
+      </section>
+    </>
+  );
+};
+
+const Home = () => {
+  const removeScroll = () => {
+    if (document.body.classList.contains("unscroll")) {
+      document.body.classList.remove("unscroll");
+    }
+  };
+  return (
+    <>
+      {removeScroll}
       <Header />
       <HeroSection />
       <Showcase />
+      <Feedback />
+      <Footer />
     </>
   );
 };

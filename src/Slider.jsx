@@ -1,11 +1,12 @@
 import React from "react";
-import ImgData from "./Main-slider-data";
+import Feedbacks from "./feedbacks";
 
-const slidercells = (img) => {
+const slidercells = (data) => {
   return (
     <>
-      <div className="carousel-img">
-        <img key={img.id} src={img.src} alt={img.alt} />
+      <div className="carousel-cell">
+        <h1 className="carousel-heading">{data.title}</h1>
+        <p className="carousel-body">{data.body}</p>
       </div>
     </>
   );
@@ -15,7 +16,7 @@ const Slider = () => {
   return (
     <>
       <div className="carousel" data-flickity='{"imagesLoaded": "true"}'>
-        {ImgData.map(slidercells)}
+        {Feedbacks.map(slidercells)}
       </div>
     </>
   );
