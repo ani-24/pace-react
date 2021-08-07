@@ -380,10 +380,8 @@
 }
 .hero-section .hero-img img {
   height: 100%;
-  border-radius: 0 0 250px 200px;
 }
 .hero-section .hero-text {
-  margin-top: 1.25em;
   text-align: center;
 }
 .hero-section .hero-text .hero-heading {
