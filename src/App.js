@@ -3,11 +3,14 @@ import Home from "./Home";
 import Header from "./Header";
 import { Switch, Route } from "react-router-dom";
 
-if (document.body.classList.contains("unscroll")) {
-  document.body.classList.remove("unscroll");
-}
+const removeUnscroll = () => {
+  if (document.body.classList.contains("unscroll")) {
+    document.body.classList.remove("unscroll");
+  }
+};
 
 const Courses = () => {
+  removeUnscroll();
   return (
     <>
       <Header />
@@ -17,6 +20,7 @@ const Courses = () => {
 };
 
 const HomePage = () => {
+  removeUnscroll();
   return (
     <>
       <Home />
