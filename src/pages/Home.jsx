@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import VideoData from "./Demo-video-data";
-import GetVidFromId from "./Vidfromlink";
-import popup from "./Modal-popup";
-import Slider from "./Slider";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import VideoData from "../data/Demo-video-data";
+import GetVidFromId from "../components/Vidfromlink";
+import popup from "../components/Modal-popup";
+import Slider from "../components/Slider";
+import Footer from "../components/Footer";
 
 const getVideos = (video, idx) => {
   const showVideo = () => {
