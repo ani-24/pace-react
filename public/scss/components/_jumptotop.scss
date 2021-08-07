@@ -1,6 +1,6 @@
 @use "./../variables/" as *;
 
-.jump-to-top-btn {
+#jump-to-top-btn {
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -11,8 +11,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background 250ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
   &:hover {
     background: lighten($color: $night-blue, $amount: 15%);
+  }
+  &.show {
+    opacity: 1;
+    pointer-events: all;
   }
 }
