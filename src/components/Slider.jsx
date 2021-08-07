@@ -1,5 +1,5 @@
 import React from "react";
-import Feedbacks from "./feedbacks";
+import Feedbacks from "../data/feedbacks";
 
 const slidercells = (data) => {
   return (
