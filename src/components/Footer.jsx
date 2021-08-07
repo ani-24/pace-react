@@ -25,7 +25,7 @@ const Footer = () => {
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14394.130711601798!2d85.157266!3d25.58721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97f67e31741abb0!2sPACE%20Institute%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1628132403903!5m2!1sen!2sin"
                     className="map"
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
                     style={mapStyle}
                   ></iframe>
@@ -34,7 +34,7 @@ const Footer = () => {
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d460512.0513559904!2d85.099725!3d25.613209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x231364db43a67516!2sPace%20Institute%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1628132450872!5m2!1sen!2sin"
                     className="map"
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
                     style={mapStyle}
                   ></iframe>
@@ -70,7 +70,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a href="https://wa.me/+919334314161?text=Hello,%20I%20want%20to%20enquire%20for%20admission">
-                    <i class="fab fa-whatsapp fa-lg"></i>
+                    <i className="fab fa-whatsapp fa-lg"></i>
                     9334314161
                   </a>
                 </li>
@@ -81,8 +81,8 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <i class="fas fa-phone-alt fa-lg"></i>9334314161, 7979911318,
-                  7979971401, 9334847381
+                  <i className="fas fa-phone-alt fa-lg"></i>9334314161,
+                  7979911318, 7979971401, 9334847381
                 </li>
               </ul>
             </div>
@@ -93,17 +93,17 @@ const Footer = () => {
               <ul>
                 <li>
                   <a href="https://www.facebook.com/paceinstituteno.1/">
-                    <i class="fab fa-facebook fa-lg"></i>Facebook
+                    <i className="fab fa-facebook fa-lg"></i>Facebook
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/pratap.manish_pace.institute/">
-                    <i class="fab fa-instagram fa-lg"></i>Instagram
+                    <i className="fab fa-instagram fa-lg"></i>Instagram
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/c/PratapManishPACEInstitute">
-                    <i class="fab fa-youtube fa-lg"></i>YouTube
+                    <i className="fab fa-youtube fa-lg"></i>YouTube
                   </a>
                 </li>
               </ul>

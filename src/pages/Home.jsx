@@ -5,6 +5,7 @@ import GetVidFromId from "../components/Vidfromlink";
 import popup from "../components/Modal-popup";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
+import JumpToTop from "../components/Jump-to-top";
 
 const getVideos = (video, idx) => {
   const showVideo = () => {
@@ -92,6 +93,7 @@ const Home = () => {
       <Showcase />
       <Feedback />
       <Footer />
+      <JumpToTop />
     </>
   );
 };
