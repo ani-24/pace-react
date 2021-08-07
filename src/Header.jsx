@@ -61,6 +61,7 @@ const Header = () => {
         <div className="hamburger_menu" onClick={toggleNav}>
           <div className="bar" id="bar-1"></div>
           <div className="bar" id="bar-2"></div>
+          <div className="bar" id="bar-3"></div>
         </div>
       </nav>
       <div className="sidenav">

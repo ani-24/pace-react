@@ -32,7 +32,7 @@ const HeroSection = () => {
     <>
       <div className="hero-section">
         <div className="hero-img">
-          <img src="./img/knowledge.svg" alt="Learn English" />
+          <img src="./img/pratap_manish.png" alt="Pratap Manish" />
         </div>
         <div className="hero-text">
           <h1 className="hero-heading">Why Learn English?</h1>

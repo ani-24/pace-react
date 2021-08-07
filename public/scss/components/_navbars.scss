@@ -8,16 +8,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 0.5em 5%;
+  padding: 0.25em 5% 0 5%;
   .logo {
     height: 65%;
-    // .logo-text {
-    //   text-transform: uppercase;
-    //   font-size: 3rem;
-    //   text-decoration: none;
-    //   color: $green;
-    //   font-family: $prata;
-    // }
     img {
       height: 100%;
     }
@@ -70,13 +63,14 @@
     }
   }
   .hamburger_menu {
-    height: 1rem;
-    width: 2.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border: 1px;
     justify-self: end;
     position: relative;
     cursor: pointer;
     z-index: 11;
+    overflow: hidden;
     .bar {
       position: absolute;
       height: 2px;
@@ -85,10 +79,14 @@
       transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms,
         transform 250ms ease-in-out;
       &#bar-1 {
-        top: 0;
+        top: 25%;
       }
       &#bar-2 {
-        top: 100%;
+        top: 50%;
+        transition: transform 250ms ease-in-out;
+      }
+      &#bar-3 {
+        top: 75%;
       }
     }
     &.cross {
@@ -101,6 +99,10 @@
           transform: rotate(-45deg);
         }
         &#bar-2 {
+          transform: translateX(100%);
+          transition: transform 250ms ease-in-out;
+        }
+        &#bar-3 {
           top: 50%;
           transform: rotate(45deg);
         }

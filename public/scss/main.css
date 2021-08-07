@@ -11,7 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em 5%;
+  padding: 0.25em 5% 0 5%;
 }
 .main-nav .logo {
   height: 65%;
@@ -68,13 +68,14 @@
           transform: translateY(-100%);
 }
 .main-nav .hamburger_menu {
-  height: 1rem;
-  width: 2.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border: 1px;
   justify-self: end;
   position: relative;
   cursor: pointer;
   z-index: 11;
+  overflow: hidden;
 }
 .main-nav .hamburger_menu .bar {
   position: absolute;
@@ -87,10 +88,17 @@
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .main-nav .hamburger_menu .bar#bar-1 {
-  top: 0;
+  top: 25%;
 }
 .main-nav .hamburger_menu .bar#bar-2 {
-  top: 100%;
+  top: 50%;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.main-nav .hamburger_menu .bar#bar-3 {
+  top: 75%;
 }
 .main-nav .hamburger_menu.cross .bar {
   background: #f7f7f7;
@@ -105,6 +113,14 @@
           transform: rotate(-45deg);
 }
 .main-nav .hamburger_menu.cross .bar#bar-2 {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.main-nav .hamburger_menu.cross .bar#bar-3 {
   top: 50%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -172,7 +188,7 @@
 }
 .carousel .carousel-cell {
   text-align: center;
-  padding: 1em 2em 0.5em 2em;
+  padding: 0 2em;
   width: 100%;
   min-height: 15rem;
   display: -webkit-box;
@@ -356,13 +372,15 @@
 
 .hero-section {
   width: 100%;
-  padding: 5%;
+  padding: 0 5%;
 }
 .hero-section .hero-img {
-  width: 100%;
+  height: 25rem;
+  text-align: center;
 }
 .hero-section .hero-img img {
-  width: 100%;
+  height: 100%;
+  border-radius: 0 0 250px 200px;
 }
 .hero-section .hero-text {
   margin-top: 1.25em;
@@ -383,9 +401,9 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -400,6 +418,11 @@
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section .hero-img {
+    height: 35rem;
   }
 }
 
