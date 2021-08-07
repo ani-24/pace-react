@@ -79,7 +79,7 @@
 }
 .main-nav .hamburger_menu .bar {
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: #f7f7f7;
   -webkit-transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out;

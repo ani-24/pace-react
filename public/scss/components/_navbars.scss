@@ -73,7 +73,7 @@
     overflow: hidden;
     .bar {
       position: absolute;
-      height: 2px;
+      height: 1px;
       width: 100%;
       background: $heading-clr-light;
       transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms,
