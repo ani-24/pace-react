@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import VideoData from "../data/Demo-video-data";
+import { DemoVideo } from "../data/Video-data";
 import GetVidFromId from "../components/Vidfromlink";
 import popup from "../components/Modal-popup";
 import Slider from "../components/Slider";
@@ -15,7 +15,7 @@ const getVideos = (video, idx) => {
     <>
       <div className="video-container" key={idx}>
         <div className="video-poster" onClick={showVideo}>
-          <div className=" play-icon">
+          <div className="play-icon">
             <i className="fas fa-play-circle"></i>
           </div>
           <img src={video.poster} alt="" />
@@ -60,7 +60,7 @@ const Showcase = () => {
         <div className="section-heading">
           <h1>Demo Lectures</h1>
         </div>
-        {VideoData.map(getVideos)}
+        {DemoVideo.map(getVideos)}
       </section>
     </>
   );

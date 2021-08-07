@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
+import VideoGallery from "./pages/Video-gallery";
 import Header from "./components/Header";
 import { Switch, Route } from "react-router-dom";
 
@@ -28,6 +29,15 @@ const HomePage = () => {
   );
 };
 
+const VideoGalleryPage = () => {
+  removeUnscroll();
+  return (
+    <>
+      <VideoGallery />
+    </>
+  );
+};
+
 const App = () => {
   return (
     <Switch>
@@ -36,6 +46,9 @@ const App = () => {
       </Route>
       <Route path="/courses">
         <Courses />
+      </Route>
+      <Route path="/video-gallery">
+        <VideoGalleryPage />
       </Route>
     </Switch>
   );

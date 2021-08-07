@@ -20,7 +20,6 @@ const popup = (el) => {
     document.body.removeChild(modal);
     document.body.classList.remove("unscroll");
   });
-  console.log("something from modal popup");
 };
 
 export default popup;
