@@ -1,8 +1,8 @@
-function getIdByUrl(url) {
+const getIdByUrl = (url) => {
   let id = url.split("/")[3];
   let imgUrl = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
   return imgUrl;
-}
+};
 
 const VideoData = [
   {
