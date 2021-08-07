@@ -370,7 +370,7 @@
   padding: 1em;
 }
 
-.jump-to-top-btn {
+#jump-to-top-btn {
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -387,11 +387,17 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: background 250ms ease-in-out;
-  transition: background 250ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
-.jump-to-top-btn:hover {
+#jump-to-top-btn:hover {
   background: #4f4e6e;
+}
+#jump-to-top-btn.show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .hero-section {

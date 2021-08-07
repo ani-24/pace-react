@@ -23,9 +23,9 @@ const JumpToTop = () => {
   return (
     <>
       <div
-        className="jump-to-top-btn"
+        id="jump-to-top-btn"
+        className={visible ? "show" : "hide"}
         onClick={scrollTop}
-        style={{ display: visible ? "flex" : "none" }}
       >
         <i className="fas fa-chevron-up jump-to-top-btn-icon"></i>
       </div>
