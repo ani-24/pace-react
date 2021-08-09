@@ -13,7 +13,7 @@ const getVideos = (video, idx) => {
   };
   return (
     <>
-      <div className="video-container" key={idx}>
+      <div className="video-container item" key={idx}>
         <div className="video-poster" onClick={showVideo}>
           <div className="play-icon">
             <i className="fas fa-play-circle"></i>

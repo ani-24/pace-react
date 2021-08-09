@@ -1,0 +1,41 @@
+@use "./../variables/" as *;
+
+.video-gallery {
+  width: 80%;
+  margin: 1em auto;
+  .item {
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    .video-poster {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .video-description {
+      padding: 1em 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 80%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background: darken($color: $night-blue, $amount: 15%);
+      z-index: -1;
+    }
+  }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+  @media (min-width: 992px) {
+    .item {
+      margin-bottom: 30px;
+    }
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

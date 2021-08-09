@@ -48,6 +48,10 @@ const GalleryVideo = [
     link: "https://youtu.be/JevNb0-O-zk",
     desc: "Grammar classes for all levels",
   },
+  {
+    link: "https://youtu.be/Ct-t0agvSIg",
+    desc: "All Topics covered in PACE Institute",
+  },
 ];
 
 DemoVideo.forEach((vid) => {

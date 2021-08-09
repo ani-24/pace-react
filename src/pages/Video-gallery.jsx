@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { GalleryVideo } from "../data/Video-data";
 import popup from "../components/Modal-popup";
 import GetVidFromId from "../components/Vidfromlink";
@@ -30,6 +31,7 @@ const VideoGallery = () => {
     <>
       <Header />
       <div className="video-gallery">{GalleryVideo.map(getVideos)}</div>
+      <Footer />
     </>
   );
 };
