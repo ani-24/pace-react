@@ -70,16 +70,16 @@ const Footer = () => {
             <div className="column-body">
               <ul>
                 <li>
-                  <NavLink to="https://wa.me/+919334314161?text=Hello,%20I%20want%20to%20enquire%20for%20admission">
+                  <a href="https://wa.me/+919334314161?text=Hello,%20I%20want%20to%20enquire%20for%20admission">
                     <i className="fab fa-whatsapp fa-lg"></i>
                     9334314161
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink to="mailto:personalityenglish@gmail.com">
+                  <a href="mailto:personalityenglish@gmail.com">
                     <i className="fas fa-envelope fa-lg"></i>
                     personalityenglish@gmail.com
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
                   <i className="fas fa-phone-alt fa-lg"></i>9334314161,
@@ -93,19 +93,19 @@ const Footer = () => {
             <div className="column-body">
               <ul>
                 <li>
-                  <NavLink to="https://www.facebook.com/paceinstituteno.1/">
+                  <a href="https://www.facebook.com/paceinstituteno.1/">
                     <i className="fab fa-facebook fa-lg"></i>Facebook
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink to="https://www.instagram.com/pratap.manish_pace.institute/">
+                  <a href="https://www.instagram.com/pratap.manish_pace.institute/">
                     <i className="fab fa-instagram fa-lg"></i>Instagram
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink to="https://www.youtube.com/c/PratapManishPACEInstitute">
+                  <a href="https://www.youtube.com/c/PratapManishPACEInstitute">
                     <i className="fab fa-youtube fa-lg"></i>YouTube
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </div>
