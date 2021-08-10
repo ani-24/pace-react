@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const mapStyle = {
   border: 0,
@@ -47,19 +48,19 @@ const Footer = () => {
             <div className="column-body">
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <a href="/courses">Courses</a>
+                  <NavLink to="/courses">Courses</NavLink>
                 </li>
                 <li>
-                  <a href="/video-gallery">Video Gallery</a>
+                  <NavLink to="/video-gallery">Video Gallery</NavLink>
                 </li>
                 <li>
-                  <a href="/image-gallery">Image Gallery</a>
+                  <NavLink to="/image-gallery">Image Gallery</NavLink>
                 </li>
                 <li>
-                  <a href="/about">About Pace</a>
+                  <NavLink to="/about">About Pace</NavLink>
                 </li>
               </ul>
             </div>
@@ -69,16 +70,16 @@ const Footer = () => {
             <div className="column-body">
               <ul>
                 <li>
-                  <a href="https://wa.me/+919334314161?text=Hello,%20I%20want%20to%20enquire%20for%20admission">
+                  <NavLink to="https://wa.me/+919334314161?text=Hello,%20I%20want%20to%20enquire%20for%20admission">
                     <i className="fab fa-whatsapp fa-lg"></i>
                     9334314161
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="mailto:personalityenglish@gmail.com">
+                  <NavLink to="mailto:personalityenglish@gmail.com">
                     <i className="fas fa-envelope fa-lg"></i>
                     personalityenglish@gmail.com
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <i className="fas fa-phone-alt fa-lg"></i>9334314161,
@@ -92,19 +93,19 @@ const Footer = () => {
             <div className="column-body">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/paceinstituteno.1/">
+                  <NavLink to="https://www.facebook.com/paceinstituteno.1/">
                     <i className="fab fa-facebook fa-lg"></i>Facebook
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/pratap.manish_pace.institute/">
+                  <NavLink to="https://www.instagram.com/pratap.manish_pace.institute/">
                     <i className="fab fa-instagram fa-lg"></i>Instagram
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/c/PratapManishPACEInstitute">
+                  <NavLink to="https://www.youtube.com/c/PratapManishPACEInstitute">
                     <i className="fab fa-youtube fa-lg"></i>YouTube
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
