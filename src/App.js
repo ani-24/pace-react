@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
+import Courses from "./pages/Courses";
 import VideoGallery from "./pages/Video-gallery";
 import Header from "./components/Header";
 import { Switch, Route } from "react-router-dom";
@@ -10,12 +11,11 @@ const removeUnscroll = () => {
   }
 };
 
-const Courses = () => {
+const CoursesPage = () => {
   removeUnscroll();
   return (
     <>
-      <Header />
-      <h1>This is courses Page</h1>
+      <Courses />
     </>
   );
 };
