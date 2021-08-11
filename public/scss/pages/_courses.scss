@@ -42,6 +42,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
     grid-template-rows: repeat(auto, min-content);
+    align-items: end;
     .course-body {
       .course-desc {
         font-size: 1rem;

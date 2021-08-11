@@ -682,6 +682,9 @@ section.feedback .section-heading {
     grid-gap: 24px;
     grid-template-rows: repeat(auto, -webkit-min-content);
     grid-template-rows: repeat(auto, min-content);
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
   .course-gallery .course-body .course-desc {
     font-size: 1rem;
