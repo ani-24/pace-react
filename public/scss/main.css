@@ -654,6 +654,9 @@ section.feedback .section-heading {
   font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
+.course-gallery .course .course-body .course-desc {
+  font-size: 0.8rem;
+}
 .course-gallery .course .course-footer {
   width: 100%;
   background: #1e1d29;
@@ -679,6 +682,9 @@ section.feedback .section-heading {
     grid-gap: 24px;
     grid-template-rows: repeat(auto, -webkit-min-content);
     grid-template-rows: repeat(auto, min-content);
+  }
+  .course-gallery .course-body .course-desc {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1024px) {
