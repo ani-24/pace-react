@@ -1,0 +1,12 @@
+.wame {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  height: 4rem;
+  width: 4rem;
+  display: inline-block;
+  transition: all 250ms ease-in-out;
+  .wame-icon {
+    width: 100%;
+  }
+}

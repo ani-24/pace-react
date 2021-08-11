@@ -6,6 +6,7 @@ import popup from "../components/Modal-popup";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 import JumpToTop from "../components/Jump-to-top";
+import Wame from "../components/Wame";
 
 const getVideos = (video, idx) => {
   const showVideo = () => {
@@ -94,6 +95,7 @@ const Home = () => {
       <Feedback />
       <Footer />
       <JumpToTop />
+      <Wame />
     </>
   );
 };

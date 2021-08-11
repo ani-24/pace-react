@@ -400,6 +400,20 @@
   pointer-events: all;
 }
 
+.wame {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  height: 4rem;
+  width: 4rem;
+  display: inline-block;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.wame .wame-icon {
+  width: 100%;
+}
+
 .hero-section {
   width: 100%;
   padding: 0 5%;
