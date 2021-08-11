@@ -616,6 +616,12 @@ section.feedback .section-heading {
   }
 }
 
+.intro-text {
+  width: 75%;
+  text-align: center;
+  margin: 1em auto;
+}
+
 *,
 *::before,
 *::after {
