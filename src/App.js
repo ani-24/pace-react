@@ -2,7 +2,6 @@ import React from "react";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import VideoGallery from "./pages/Video-gallery";
-import Header from "./components/Header";
 import { Switch, Route } from "react-router-dom";
 
 const removeUnscroll = () => {

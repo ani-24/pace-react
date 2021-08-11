@@ -1,5 +1,46 @@
+@use "./../variables/" as *;
+
 .intro-text {
   width: 75%;
   text-align: center;
   margin: 1em auto;
+}
+
+.course-gallery {
+  padding: 0 10%;
+  margin-top: 30px;
+  .course {
+    margin-bottom: 15px;
+    .course-body {
+      background: $night-blue;
+      padding: 25px;
+      .course-title {
+        font-family: $montserrat;
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 0.5em;
+      }
+    }
+    .course-footer {
+      width: 100%;
+      background: darken($color: $night-blue, $amount: 8%);
+      padding: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer-details {
+        padding: 0.5em;
+        background: $night-blue;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    grid-template-rows: repeat(auto, min-content);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

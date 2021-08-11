@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 .main-nav {
   z-index: 10;
@@ -634,6 +635,56 @@ section.feedback .section-heading {
   width: 75%;
   text-align: center;
   margin: 1em auto;
+}
+
+.course-gallery {
+  padding: 0 10%;
+  margin-top: 30px;
+}
+.course-gallery .course {
+  margin-bottom: 15px;
+}
+.course-gallery .course .course-body {
+  background: #2f2e41;
+  padding: 25px;
+}
+.course-gallery .course .course-body .course-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+.course-gallery .course .course-footer {
+  width: 100%;
+  background: #1e1d29;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.course-gallery .course .course-footer .footer-details {
+  padding: 0.5em;
+  background: #2f2e41;
+}
+@media (min-width: 992px) {
+  .course-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    grid-template-rows: repeat(auto, -webkit-min-content);
+    grid-template-rows: repeat(auto, min-content);
+  }
+}
+@media (min-width: 1024px) {
+  .course-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 *,
