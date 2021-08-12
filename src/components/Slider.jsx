@@ -15,7 +15,10 @@ const slidercells = (data) => {
 const Slider = () => {
   return (
     <>
-      <div className="carousel" data-flickity='{"imagesLoaded": "true"}'>
+      <div
+        className="carousel"
+        data-flickity='{"imagesLoaded": "true", "cellAlign": "left", "contain": "true"}'
+      >
         {Feedbacks.map(slidercells)}
       </div>
     </>
