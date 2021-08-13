@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import CoursesData from "../data/Course-data";
 import Footer from "../components/Footer";
+import JumpToTop from "../components/Jump-to-top";
 
 const createCourses = (course, idx) => {
   const listStyle = {
@@ -65,6 +66,7 @@ const Courses = () => {
       </p>
       <CourseGallery />
       <Footer />
+      <JumpToTop />
     </>
   );
 };
