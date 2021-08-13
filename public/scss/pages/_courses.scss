@@ -24,6 +24,12 @@
       }
       .course-desc {
         font-size: 0.8rem;
+        li {
+          margin-bottom: 0.5em;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
     .course-footer {

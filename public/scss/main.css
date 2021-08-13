@@ -659,6 +659,12 @@ section.feedback .section-heading {
 .course-gallery .course .course-body .course-desc {
   font-size: 0.8rem;
 }
+.course-gallery .course .course-body .course-desc li {
+  margin-bottom: 0.5em;
+}
+.course-gallery .course .course-body .course-desc li:last-child {
+  margin-bottom: 0;
+}
 .course-gallery .course .course-footer {
   width: 100%;
   background: #1e1d29;
