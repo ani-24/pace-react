@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import CoursesData from "../data/Course-data";
 import Footer from "../components/Footer";
 import JumpToTop from "../components/Jump-to-top";
+import Wame from "../components/Wame";
 
 const createCourses = (course, idx) => {
   const listStyle = {
@@ -67,6 +68,7 @@ const Courses = () => {
       <CourseGallery />
       <Footer />
       <JumpToTop />
+      <Wame />
     </>
   );
 };
