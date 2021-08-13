@@ -44,7 +44,7 @@ const App = () => {
         <HomePage />
       </Route>
       <Route path="/courses">
-        <Courses />
+        <CoursesPage />
       </Route>
       <Route path="/video-gallery">
         <VideoGalleryPage />
