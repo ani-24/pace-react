@@ -634,7 +634,9 @@ section.feedback .section-heading {
 .intro-text {
   width: 75%;
   text-align: center;
-  margin: 1em auto;
+  margin: 2em auto;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .course-gallery {
@@ -673,13 +675,14 @@ section.feedback .section-heading {
 }
 .course-gallery .course .course-footer .footer-details {
   padding: 0.5em;
+  font-size: 0.8rem;
   background: #2f2e41;
 }
 @media (min-width: 992px) {
   .course-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
+    grid-gap: 30px;
     grid-template-rows: repeat(auto, -webkit-min-content);
     grid-template-rows: repeat(auto, min-content);
     -webkit-box-align: end;
