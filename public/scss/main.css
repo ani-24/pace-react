@@ -684,6 +684,11 @@ section.feedback .section-heading {
   font-size: 0.8rem;
   background: #2f2e41;
 }
+@media (min-width: 500px) {
+  .course-gallery .course .course-footer {
+    padding: 0.5em 0.3em;
+  }
+}
 @media (min-width: 992px) {
   .course-gallery {
     display: grid;
