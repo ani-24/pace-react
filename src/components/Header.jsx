@@ -25,17 +25,31 @@ const Header = () => {
         </div>
         <ul className="desktop-nav nav-list">
           <li className="nav-item">
-            <NavLink to="/" className="nav-link" data-text="Home">
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/"
+              className="nav-link"
+              data-text="Home"
+            >
               Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/courses" className="nav-link" data-text="Courses">
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/courses"
+              className="nav-link"
+              data-text="Courses"
+            >
               Courses
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
+              exact
+              activeClassName="active"
               to="/video-gallery"
               className="nav-link"
               data-text="Video Gallery"
@@ -45,6 +59,8 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <NavLink
+              exact
+              activeClassName="active"
               to="/image-gallery"
               className="nav-link"
               data-text="Image Gallery"
@@ -53,7 +69,13 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" className="nav-link" data-text="About Pace">
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/about"
+              className="nav-link"
+              data-text="About Pace"
+            >
               About Pace
             </NavLink>
           </li>

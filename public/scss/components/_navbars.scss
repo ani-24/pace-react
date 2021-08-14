@@ -50,6 +50,12 @@
           &::after {
             top: 100%;
           }
+          &.active {
+            &::before,
+            &::after {
+              color: #fff;
+            }
+          }
         }
         &:hover {
           .nav-link {

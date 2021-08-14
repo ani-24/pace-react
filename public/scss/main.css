@@ -64,6 +64,9 @@
 .main-nav .desktop-nav.nav-list .nav-item .nav-link::after {
   top: 100%;
 }
+.main-nav .desktop-nav.nav-list .nav-item .nav-link.active::before, .main-nav .desktop-nav.nav-list .nav-item .nav-link.active::after {
+  color: #fff;
+}
 .main-nav .desktop-nav.nav-list .nav-item:hover .nav-link::before, .main-nav .desktop-nav.nav-list .nav-item:hover .nav-link::after {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
