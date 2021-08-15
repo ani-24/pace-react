@@ -713,6 +713,33 @@ section.feedback .section-heading {
   }
 }
 
+.about-section {
+  background: #2f2e41;
+  padding: 1em;
+  border-radius: 5px;
+}
+.about-section .section-title {
+  margin-bottom: 1em;
+  padding-bottom: 0.25em;
+  position: relative;
+  display: inline-block;
+}
+.about-section .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 75%;
+  background: #00bfa6;
+}
+@media (min-width: 1000px) {
+  .about-section {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
 *,
 *::before,
 *::after {

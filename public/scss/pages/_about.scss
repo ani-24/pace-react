@@ -1,0 +1,26 @@
+@use "./../variables/" as *;
+
+.about-section {
+  background: $night-blue;
+  padding: 1em;
+  border-radius: 5px;
+  .section-title {
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 75%;
+      background: $green;
+    }
+  }
+  @media (min-width: 1000px) {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
