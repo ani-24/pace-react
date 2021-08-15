@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import VideoGallery from "./pages/Video-gallery";
+import About from "./pages/About";
 import { Switch, Route } from "react-router-dom";
 
 const removeUnscroll = () => {
@@ -37,6 +38,15 @@ const VideoGalleryPage = () => {
   );
 };
 
+const AboutPage = () => {
+  removeUnscroll();
+  return (
+    <>
+      <About />
+    </>
+  );
+};
+
 const App = () => {
   return (
     <Switch>
@@ -48,6 +58,9 @@ const App = () => {
       </Route>
       <Route path="/video-gallery">
         <VideoGalleryPage />
+      </Route>
+      <Route path="/about">
+        <AboutPage />
       </Route>
     </Switch>
   );
