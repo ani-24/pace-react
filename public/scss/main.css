@@ -406,16 +406,21 @@
 
 .wame {
   position: fixed;
-  bottom: 1em;
+  bottom: 80%;
   left: 1em;
   height: 4rem;
   width: 4rem;
   display: inline-block;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: bottom 750ms ease-in-out, opacity 750ms;
+  transition: bottom 750ms ease-in-out, opacity 750ms;
+  opacity: 0;
 }
 .wame .wame-icon {
   width: 100%;
+}
+.wame.show {
+  bottom: 1em;
+  opacity: 1;
 }
 
 .hero-section {
