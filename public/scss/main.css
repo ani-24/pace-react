@@ -733,11 +733,26 @@ section.feedback .section-heading {
   width: 75%;
   background: #00bfa6;
 }
+.about-section .section-text {
+  opacity: 0.8;
+}
+.about-section .section-text p {
+  margin-top: 1em;
+}
 @media (min-width: 1000px) {
   .about-section {
     width: 70%;
     margin: 30px auto;
   }
+}
+.about-section .personality-list {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  font-size: 0.9rem;
+  list-style: none;
+}
+.about-section .personality-list li {
+  margin-bottom: 0.5em;
 }
 
 *,

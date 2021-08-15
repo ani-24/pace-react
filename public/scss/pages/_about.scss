@@ -19,8 +19,23 @@
       background: $green;
     }
   }
+  .section-text {
+    opacity: 0.8;
+    p {
+      margin-top: 1em;
+    }
+  }
   @media (min-width: 1000px) {
     width: 70%;
     margin: 30px auto;
+  }
+  .personality-list {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-size: 0.9rem;
+    list-style: none;
+    li {
+      margin-bottom: 0.5em;
+    }
   }
 }
