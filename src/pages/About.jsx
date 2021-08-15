@@ -9,9 +9,9 @@ const AboutPace = () => {
         <h1 className="section-title">About Pace</h1>
         <p className="section-text">
           <p>
-            The literal meaning of ‘ PACE ‘ is ‘Someone’s step by step
-            consistent growth in a direction and making required changes in
-            their position’.
+            The literal meaning of "PACE" is "Someone’s step by step consistent
+            growth in a direction and making required changes in their
+            position".
           </p>
           <p>
             PACE Institute has mentored thousands of successful students in
