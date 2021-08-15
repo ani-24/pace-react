@@ -1,17 +1,24 @@
 .wame {
   position: fixed;
-  bottom: 80%;
   left: 1em;
   height: 4rem;
   width: 4rem;
   display: inline-block;
+  bottom: 1em;
+  opacity: 1;
   transition: bottom 1250ms ease-in-out, opacity 1250ms;
-  opacity: 0;
+  animation: show 1250ms ease-in-out;
+  @keyframes show {
+    from {
+      bottom: 80%;
+      opacity: 0;
+    }
+    to {
+      bottom: 1em;
+      opacity: 1;
+    }
+  }
   .wame-icon {
     width: 100%;
-  }
-  &.show {
-    bottom: 1em;
-    opacity: 1;
   }
 }
