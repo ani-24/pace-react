@@ -1,13 +1,18 @@
 import React from "react";
 import Feedbacks from "../data/feedbacks";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import "swiper/swiper-bundle.css";
 
-const slidercells = (data) => {
+SwiperCore.use([Navigation, Pagination, Parallax]);
+
+const slidercells = (data, idx) => {
   return (
     <>
-      <div className="carousel-cell">
-        <h3 className="carousel-heading">{data.title}</h3>
-        <p className="carousel-body">{data.body}</p>
-      </div>
+      <SwiperSlide key={`slider-${idx}`} className="feedback-carousel-slide">
+        <div className="carousel-heading">{data.title}</div>
+        <div className="carousel-body">{data.body}</div>
+      </SwiperSlide>
     </>
   );
 };
@@ -15,12 +20,9 @@ const slidercells = (data) => {
 const Slider = () => {
   return (
     <>
-      <div
-        className="carousel"
-        data-flickity='{"imagesLoaded": "true", "cellAlign": "left", "contain": "true"}'
-      >
+      <Swiper navigation pagination parallax className="feedback-carousel">
         {Feedbacks.map(slidercells)}
-      </div>
+      </Swiper>
     </>
   );
 };
