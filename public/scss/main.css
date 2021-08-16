@@ -573,19 +573,25 @@ section.showcase .video-container .video-description {
 section.feedback .section-heading {
   font-size: 1rem;
 }
-@media (min-width: 600px) {
-  section.feedback .section-heading .section-heading {
-    font-size: 1.5rem;
-  }
-  section.feedback .section-heading .carousel .carousel-cell .carousel-body {
-    font-size: 0.9rem;
-  }
+section.feedback .section-heading .feedback-carousel .feedback-carousel-slide {
+  width: 100%;
+  padding: 2em 10%;
 }
-@media (min-width: 800px) {
-  section.feedback .section-heading .carousel .carousel-cell .carousel-heading {
+section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .carousel-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .carousel-body {
+  font-size: 0.8rem;
+}
+@media (min-width: 1000px) {
+  section.feedback .section-heading .feedback-carousel {
+    margin-top: 1em;
+  }
+  section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .carousel-heading {
     font-size: 1.4rem;
   }
-  section.feedback .section-heading .carousel .carousel-cell .carousel-body {
+  section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .carousel-body {
     font-size: 1rem;
   }
 }

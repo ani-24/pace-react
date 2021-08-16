@@ -140,24 +140,24 @@ section {
   &.feedback {
     .section-heading {
       font-size: 1rem;
-      @media (min-width: 600px) {
-        & {
-          .section-heading {
-            font-size: 1.5rem;
+      .feedback-carousel {
+        .feedback-carousel-slide {
+          width: 100%;
+          padding: 2em 10%;
+          .carousel-heading {
+            font-size: 1.2rem;
+            margin-bottom: 1em;
           }
-          .carousel {
-            .carousel-cell {
-              .carousel-body {
-                font-size: 0.9rem;
-              }
-            }
+          .carousel-body {
+            font-size: 0.8rem;
           }
         }
       }
-      @media (min-width: 800px) {
+      @media (min-width: 1000px) {
         & {
-          .carousel {
-            .carousel-cell {
+          .feedback-carousel {
+            margin-top: 1em;
+            .feedback-carousel-slide {
               .carousel-heading {
                 font-size: 1.4rem;
               }

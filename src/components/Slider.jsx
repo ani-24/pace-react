@@ -1,35 +1,18 @@
 import React from "react";
 import Feedbacks from "../data/feedbacks";
-import Swiper from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import "swiper/swiper-bundle.css";
 
-const slidercells = (data) => {
-  const swiper = new Swiper(".swiper-container", {
-    // Optional parameters
-    direction: "vertical",
-    loop: true,
+SwiperCore.use([Navigation, Pagination, Parallax]);
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
+const slidercells = (data, idx) => {
   return (
     <>
-      <div className="swiper-slide">
-        <div className="section-heading">{data.title}</div>
-        <p className="carousel-body">{data.body}</p>
-      </div>
+      <SwiperSlide key={`slider-${idx}`} className="feedback-carousel-slide">
+        <div className="carousel-heading">{data.title}</div>
+        <div className="carousel-body">{data.body}</div>
+      </SwiperSlide>
     </>
   );
 };
@@ -37,13 +20,9 @@ const slidercells = (data) => {
 const Slider = () => {
   return (
     <>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">{Feedbacks.map(slidercells)}</div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
-      </div>
+      <Swiper navigation pagination parallax className="feedback-carousel">
+        {Feedbacks.map(slidercells)}
+      </Swiper>
     </>
   );
 };
