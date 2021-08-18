@@ -21,6 +21,21 @@
       margin-top: 1em;
       line-height: 25px;
     }
+    .hero-link {
+      padding: 0.5em 1em;
+      background: $green;
+      color: $night-blue;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-top: 1em;
+      border: 1px solid $green;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        background: transparent;
+        color: $green;
+      }
+    }
   }
   @media (min-width: 992px) {
     & {

@@ -462,6 +462,22 @@
   margin-top: 1em;
   line-height: 25px;
 }
+.hero-section .hero-text .hero-link {
+  padding: 0.5em 1em;
+  background: #00bfa6;
+  color: #2f2e41;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 1em;
+  border: 1px solid #00bfa6;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.hero-section .hero-text .hero-link:hover {
+  background: transparent;
+  color: #00bfa6;
+}
 @media (min-width: 992px) {
   .hero-section {
     display: -webkit-box;

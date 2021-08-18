@@ -48,6 +48,13 @@ const HeroSection = () => {
             international discourse and communication in many regions and
             professional contexts such as science, navigation and law.
           </p>
+          <a
+            href="https://www.youtube.com/c/PratapManishPACEInstitute"
+            className="hero-link"
+            target="_blank"
+          >
+            <i class="far fa-play-circle"></i>&nbsp;Start Learning
+          </a>
         </div>
       </div>
     </>
