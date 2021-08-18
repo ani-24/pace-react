@@ -6,8 +6,7 @@
   display: inline-block;
   bottom: 1em;
   opacity: 1;
-  transition: bottom 1250ms ease-in-out, opacity 1250ms;
-  animation: show 1250ms ease-in-out;
+  animation: show 2000ms ease-in-out;
   @keyframes show {
     from {
       bottom: 80%;

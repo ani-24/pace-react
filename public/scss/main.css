@@ -412,10 +412,8 @@
   display: inline-block;
   bottom: 1em;
   opacity: 1;
-  -webkit-transition: bottom 1250ms ease-in-out, opacity 1250ms;
-  transition: bottom 1250ms ease-in-out, opacity 1250ms;
-  -webkit-animation: show 1250ms ease-in-out;
-          animation: show 1250ms ease-in-out;
+  -webkit-animation: show 2000ms ease-in-out;
+          animation: show 2000ms ease-in-out;
 }
 @-webkit-keyframes show {
   from {
