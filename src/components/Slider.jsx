@@ -20,7 +20,7 @@ const slidercells = (data, idx) => {
 const Slider = () => {
   return (
     <>
-      <Swiper navigation pagination parallax className="feedback-carousel">
+      <Swiper navigation pagination parallax loop className="feedback-carousel">
         {Feedbacks.map(slidercells)}
       </Swiper>
     </>
