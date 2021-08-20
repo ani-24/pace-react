@@ -78,7 +78,6 @@
   justify-self: end;
   position: relative;
   cursor: pointer;
-  z-index: 11;
   overflow: hidden;
 }
 .main-nav .hamburger_menu .bar {
