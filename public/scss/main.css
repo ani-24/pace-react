@@ -78,7 +78,6 @@
   justify-self: end;
   position: relative;
   cursor: pointer;
-  z-index: 11;
   overflow: hidden;
 }
 .main-nav .hamburger_menu .bar {
@@ -165,6 +164,13 @@
           align-items: center;
   -webkit-transition: right 250ms ease-out;
   transition: right 250ms ease-out;
+}
+.sidenav .sidenav-close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.5em;
+  right: 1.5em;
+  cursor: pointer;
 }
 .sidenav .nav-list {
   list-style: none;
