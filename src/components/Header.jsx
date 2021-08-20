@@ -87,7 +87,10 @@ const Header = () => {
         </div>
       </nav>
       <div className="sidenav">
-        <i className="fas fa-times-circle fa-lg sidenav-close"></i>
+        <i
+          className="fas fa-times-circle fa-lg sidenav-close"
+          onClick={toggleNav}
+        ></i>
         <ul className="nav-list">
           <li className="nav-item">
             <NavLink to="/" className="nav-link">
