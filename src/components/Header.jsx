@@ -87,6 +87,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="sidenav">
+        <i className="fas fa-times-circle fa-lg sidenav-close"></i>
         <ul className="nav-list">
           <li className="nav-item">
             <NavLink to="/" className="nav-link">
