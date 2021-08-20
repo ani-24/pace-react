@@ -165,6 +165,13 @@
   -webkit-transition: right 250ms ease-out;
   transition: right 250ms ease-out;
 }
+.sidenav .sidenav-close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.5em;
+  right: 1.5em;
+  cursor: pointer;
+}
 .sidenav .nav-list {
   list-style: none;
   text-align: center;
