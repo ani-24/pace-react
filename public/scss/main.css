@@ -640,50 +640,6 @@ section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .c
   }
 }
 
-.video-gallery {
-  width: 80%;
-  margin: 1em auto;
-}
-.video-gallery .item {
-  position: relative;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.video-gallery .item .video-poster {
-  width: 80%;
-  margin: 0 auto;
-}
-.video-gallery .item .video-description {
-  padding: 1em 0;
-}
-.video-gallery .item::after {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: #0f0e14;
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .video-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15px;
-  }
-}
-@media (min-width: 992px) {
-  .video-gallery .item {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 1100px) {
-  .video-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .intro-text {
   width: 75%;
   text-align: center;
@@ -760,6 +716,79 @@ section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .c
 @media (min-width: 1024px) {
   .course-gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.video-gallery {
+  width: 80%;
+  margin: 1em auto;
+}
+.video-gallery .item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.video-gallery .item .video-poster {
+  width: 80%;
+  margin: 0 auto;
+}
+.video-gallery .item .video-description {
+  padding: 1em 0;
+}
+.video-gallery .item::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #0f0e14;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .video-gallery .item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  .video-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.image-gallery {
+  padding: 0 10%;
+  margin: 50px 0;
+}
+.image-gallery .gallery-item {
+  width: 100%;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background: #00bfa6;
+}
+.image-gallery .gallery-item img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  .image-gallery {
+    grid-gap: 50px;
   }
 }
 
