@@ -34,3 +34,9 @@ p {
     }
   }
 }
+
+@keyframes blur {
+  from {
+    backdrop-filter: blur(0);
+  }
+}

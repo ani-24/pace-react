@@ -22,3 +22,14 @@
     grid-gap: 50px;
   }
 }
+
+.modal {
+  .slide-btn {
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    .slide-btn {
+      font-size: 2.4rem;
+    }
+  }
+}

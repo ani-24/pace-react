@@ -792,6 +792,15 @@ section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .c
   }
 }
 
+.modal .slide-btn {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .modal .slide-btn {
+    font-size: 2.4rem;
+  }
+}
+
 .about-section {
   background: #2f2e41;
   padding: 1em;
@@ -870,6 +879,20 @@ p {
 @media (min-width: 600px) {
   p {
     font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes blur {
+  from {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+}
+
+@keyframes blur {
+  from {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
   }
 }
 /*# sourceMappingURL=main.css.map */
