@@ -28,7 +28,6 @@ const Gallery = () => {
     `;
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
-    // document.body.classList.add("unscroll");
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
     const changeImg = () => {
@@ -55,8 +54,6 @@ const Gallery = () => {
         !e.target.classList.contains("slide-btn")
       ) {
         document.body.removeChild(overlay);
-        // document.body.classList.remove("unscroll");
-        console.log(e.target, "inside");
       } else {
         console.log(e.target);
       }
