@@ -4,6 +4,7 @@ import Courses from "./pages/Courses";
 import VideoGallery from "./pages/Video-gallery";
 import ImageGallery from "./pages/Image-gallery";
 import About from "./pages/About";
+import Error from "./pages/404error";
 import { Switch, Route } from "react-router-dom";
 
 const removeUnscroll = () => {
@@ -74,6 +75,9 @@ const App = () => {
       </Route>
       <Route path="/about">
         <AboutPage />
+      </Route>
+      <Route>
+        <Error />
       </Route>
     </Switch>
   );
