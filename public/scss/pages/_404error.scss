@@ -1,0 +1,38 @@
+@use "./../variables/" as *;
+
+main {
+  width: 100%;
+  padding: 0 10%;
+  margin-bottom: 30px;
+  .error-img {
+    img {
+      width: 100%;
+    }
+  }
+  .error-text {
+    width: 100%;
+    text-align: center;
+    .title {
+      margin-bottom: 0.5em;
+    }
+    .text {
+      margin-bottom: 1.5em;
+    }
+    .link {
+      padding: 0.5em;
+      background: $green;
+      color: $night-blue;
+      text-decoration: none;
+      display: inline;
+      margin-top: 1em;
+    }
+  }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .error-text {
+      text-align: start;
+    }
+  }
+}

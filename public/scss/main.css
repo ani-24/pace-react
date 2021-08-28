@@ -843,6 +843,45 @@ section.feedback .section-heading .feedback-carousel .feedback-carousel-slide .c
   margin-bottom: 0.5em;
 }
 
+main {
+  width: 100%;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+main .error-img img {
+  width: 100%;
+}
+main .error-text {
+  width: 100%;
+  text-align: center;
+}
+main .error-text .title {
+  margin-bottom: 0.5em;
+}
+main .error-text .text {
+  margin-bottom: 1.5em;
+}
+main .error-text .link {
+  padding: 0.5em;
+  background: #00bfa6;
+  color: #2f2e41;
+  text-decoration: none;
+  display: inline;
+  margin-top: 1em;
+}
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .error-text {
+    text-align: start;
+  }
+}
+
 *,
 *::before,
 *::after {
