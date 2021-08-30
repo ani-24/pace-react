@@ -79,6 +79,17 @@ const Header = () => {
               About Pace
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/admission-process"
+              className="nav-link"
+              data-text="Admission Process"
+            >
+              Admission Process
+            </NavLink>
+          </li>
         </ul>
         <div className="hamburger_menu" onClick={toggleNav}>
           <div className="bar" id="bar-1"></div>
@@ -115,6 +126,11 @@ const Header = () => {
           <li className="nav-item">
             <NavLink to="/about" className="nav-link">
               About Pace
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/admission-process" className="nav-link">
+              Admission Process
             </NavLink>
           </li>
         </ul>
