@@ -588,8 +588,7 @@ section.showcase .video-container .video-description {
             flex: 1;
   }
   section.showcase .video-container .video-poster img {
-    height: 100%;
-    width: auto;
+    width: 100%;
   }
   section.showcase .video-container .video-description {
     padding: 25px;
