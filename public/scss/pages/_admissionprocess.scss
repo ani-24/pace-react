@@ -1,0 +1,47 @@
+@use "./../variables/" as *;
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  .text {
+    .title {
+      position: relative;
+      text-transform: capitalize;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 60%;
+        background: $green;
+      }
+    }
+    p {
+      margin: 1em 0;
+      color: #f8f8f8;
+      .payment-options {
+        margin-left: 1em;
+        list-style: none;
+        margin-top: 0.5em;
+      }
+    }
+  }
+  .img {
+    width: 100%;
+    display: none;
+    img {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .img {
+      display: block;
+    }
+  }
+}

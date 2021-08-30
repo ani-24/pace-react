@@ -882,6 +882,54 @@ main .error-text .link {
   }
 }
 
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+.container .text .title {
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.container .text .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 60%;
+  background: #00bfa6;
+}
+.container .text p {
+  margin: 1em 0;
+  color: #f8f8f8;
+}
+.container .text p .payment-options {
+  margin-left: 1em;
+  list-style: none;
+  margin-top: 0.5em;
+}
+.container .img {
+  width: 100%;
+  display: none;
+}
+.container .img img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .img {
+    display: block;
+  }
+}
+
 *,
 *::before,
 *::after {
