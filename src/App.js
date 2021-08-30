@@ -4,6 +4,7 @@ import Courses from "./pages/Courses";
 import VideoGallery from "./pages/Video-gallery";
 import ImageGallery from "./pages/Image-gallery";
 import About from "./pages/About";
+import AdmissionProcess from "./pages/Admission-process";
 import Error from "./pages/404error";
 import { Switch, Route } from "react-router-dom";
 
@@ -58,6 +59,15 @@ const AboutPage = () => {
   );
 };
 
+const AdmissionProcessPage = () => {
+  removeUnscroll();
+  return (
+    <>
+      <AdmissionProcess />
+    </>
+  );
+};
+
 const App = () => {
   return (
     <Switch>
@@ -75,6 +85,9 @@ const App = () => {
       </Route>
       <Route path="/about">
         <AboutPage />
+      </Route>
+      <Route path="/admission-process">
+        <AdmissionProcessPage />
       </Route>
       <Route>
         <Error />
