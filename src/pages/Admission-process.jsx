@@ -29,6 +29,11 @@ const Content = () => {
               <li className="option">&rarr; Cash (offline)</li>
             </ul>
           </p>
+          <p>UPI payment is linked to the mobile number 9334314161</p>
+          <p>
+            Send the screenshot or payment details to the same WhatsApp number
+            for booking of your seat
+          </p>
         </div>
         <div className="img">
           <img src="./img/payment.png" alt="Payment" />
