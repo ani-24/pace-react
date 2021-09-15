@@ -1,6 +1,7 @@
 @use "./../variables/" as *;
 
 .main-nav {
+  position: sticky;
   z-index: 10;
   width: 100%;
   top: 0;
@@ -9,6 +10,11 @@
   grid-template-columns: 1fr 2fr;
   align-items: center;
   padding: 0.25em 5% 0 5%;
+  background: darken(
+    $color: rgba($color: $night-blue, $alpha: 0.5),
+    $amount: 10%
+  );
+  backdrop-filter: blur(25px);
   .logo {
     height: 65%;
     img {
@@ -69,29 +75,33 @@
     }
   }
   .hamburger_menu {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
     border: 1px;
     justify-self: end;
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 50%;
+    background: $green;
+    box-shadow: 0px 0px 20px $green, 0px 0px 40px $green, 0px 0px 80px $green;
     .bar {
       position: absolute;
       height: 1px;
-      width: 100%;
-      background: $heading-clr-light;
+      width: 70%;
+      left: 15%;
+      background: darken($color: $night-blue, $amount: 10%);
       transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms,
         transform 250ms ease-in-out;
       &#bar-1 {
-        top: 25%;
+        top: 30%;
       }
       &#bar-2 {
         top: 50%;
         transition: transform 250ms ease-in-out;
       }
       &#bar-3 {
-        top: 75%;
+        top: 70%;
       }
     }
     &.cross {

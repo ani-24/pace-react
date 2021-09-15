@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 .main-nav {
+  position: sticky;
   z-index: 10;
   width: 100%;
   top: 0;
@@ -13,6 +14,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0.25em 5% 0 5%;
+  background: rgba(25, 25, 35, 0.5);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
 }
 .main-nav .logo {
   height: 65%;
@@ -72,26 +76,31 @@
           transform: translateY(-100%);
 }
 .main-nav .hamburger_menu {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
   border: 1px;
   justify-self: end;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 50%;
+  background: #00bfa6;
+  -webkit-box-shadow: 0px 0px 20px #00bfa6, 0px 0px 40px #00bfa6, 0px 0px 80px #00bfa6;
+          box-shadow: 0px 0px 20px #00bfa6, 0px 0px 40px #00bfa6, 0px 0px 80px #00bfa6;
 }
 .main-nav .hamburger_menu .bar {
   position: absolute;
   height: 1px;
-  width: 100%;
-  background: #f7f7f7;
+  width: 70%;
+  left: 15%;
+  background: #191923;
   -webkit-transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out;
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out;
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, transform 250ms ease-in-out;
   transition: background 250ms ease-in-out, top 250ms ease-in-out 250ms, transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .main-nav .hamburger_menu .bar#bar-1 {
-  top: 25%;
+  top: 30%;
 }
 .main-nav .hamburger_menu .bar#bar-2 {
   top: 50%;
@@ -101,7 +110,7 @@
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 .main-nav .hamburger_menu .bar#bar-3 {
-  top: 75%;
+  top: 70%;
 }
 .main-nav .hamburger_menu.cross .bar {
   background: #f7f7f7;
