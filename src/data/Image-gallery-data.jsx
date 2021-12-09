@@ -36,8 +36,12 @@ const ImageGalleryImgs = [
     alt: "Stairs",
   },
   {
-    img: "./img/image-gallery/img9.jpg",
+    img: "./img/image-gallery/img9.jpeg",
     alt: "Pace Tower",
+  },
+  {
+    img: "./img/image-gallery/img12.jpeg",
+    alt: "Pace Tower in night",
   },
 ];
 
