@@ -67,6 +67,16 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            <div className="column-heading">Download Our App:</div>
+            <div className="column-body">
+              <a href="http://on-app.in/app/home/iiddy">
+                <img
+                  src="./img/android-download.png"
+                  className="app-download-img"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
           <div className="column contact">
             <div className="column-heading">Contact us</div>
