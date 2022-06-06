@@ -71,7 +71,7 @@ const Footer = () => {
             <div className="column-body">
               <a href="http://on-app.in/app/home/iiddy">
                 <img
-                  src="./img/android-download.png"
+                  src="./img/android-download.png"x
                   className="app-download-img"
                   alt=""
                 />

@@ -56,6 +56,12 @@ const HeroSection = () => {
             <i class="far fa-play-circle"></i>&nbsp;Start Learning
           </a>
         </div>
+        <section className="hero-video">
+          <div className="section-heading">
+            <h1>Learn from the BEST</h1>
+          </div>
+          <video src="./img/hero-video.mp4" controls></video>
+        </section>
       </div>
     </>
   );
