@@ -18,7 +18,7 @@ const CoursesData = [
     price: "₹13,500",
   },
   {
-    title: "Guaranteed Overall English Course",
+    title: "Guaranteed English Course from basic to advance level",
     items: [
       "Full grammar from basic to advance.",
       "Descriptive Writing.",
