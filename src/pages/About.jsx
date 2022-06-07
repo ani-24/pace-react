@@ -34,6 +34,28 @@ const AboutPace = () => {
   );
 };
 
+const AboutMentor = () => {
+  return (
+    <section className="section about-section">
+      <h1 className="section-title">About mentor</h1>
+      <p className="section-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          officiis delectus rerum neque vel soluta fugiat, ad rem non quaerat.
+          Ut nihil corporis adipisci maxime id dicta doloribus odio veniam.
+        </p>
+        <p>
+          Dolorum, accusamus? Perferendis assumenda quis reiciendis illum, neque
+          consectetur necessitatibus officia, est voluptatibus autem rerum vero
+          quo praesentium, eaque accusantium vel. Debitis veniam beatae ab saepe
+          ex maxime facilis molestiae.
+        </p>
+        <video src="./img/hero-video.mp4" controls></video>
+      </p>
+    </section>
+  );
+};
+
 const PersonalityDevelopment = () => {
   return (
     <>
@@ -161,6 +183,7 @@ const About = () => {
       <AboutPace />
       <PersonalityDevelopment />
       <CommunicativeEnglish />
+      <AboutMentor />
       <Footer />
       <Wame />
       <JumpToTop />
