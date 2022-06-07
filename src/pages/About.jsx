@@ -40,15 +40,13 @@ const AboutMentor = () => {
       <h1 className="section-title">About mentor</h1>
       <p className="section-text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          officiis delectus rerum neque vel soluta fugiat, ad rem non quaerat.
-          Ut nihil corporis adipisci maxime id dicta doloribus odio veniam.
-        </p>
-        <p>
-          Dolorum, accusamus? Perferendis assumenda quis reiciendis illum, neque
-          consectetur necessitatibus officia, est voluptatibus autem rerum vero
-          quo praesentium, eaque accusantium vel. Debitis veniam beatae ab saepe
-          ex maxime facilis molestiae.
+          Pratap Manish is a world class personality development coach with
+          experience of training students for past 17years across multiple
+          nations. He is an author grammarian and public speaker. Thousands of
+          his students are settled successfully in different sectors of
+          different countries. He is a passionate mentor who transforms the
+          diligent students incredibly. He has been educated from prestigious
+          institutions which also involves a certification from IIM Kolkata
         </p>
       </p>
       <video src="./img/hero-video.mp4" controls></video>
