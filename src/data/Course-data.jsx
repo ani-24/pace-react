@@ -51,7 +51,7 @@ const CoursesData = [
       "Doubt clearing and back up classes.",
     ],
     duration: "(unlimited classes to regular students)",
-    price: "₹13,500",
+    price: "₹20,000",
   },
   {
     title: "Public speaking course for children or housewives",
@@ -69,7 +69,7 @@ const CoursesData = [
       "Doubt clearing and back up classes.",
     ],
     duration: "1 year for regular students",
-    price: "₹15,000",
+    price: "20,000",
   },
   {
     title:
@@ -81,8 +81,8 @@ const CoursesData = [
       "Vocabulary building",
       "Assignments, assessment and checking",
     ],
-    duration: "Duration: 5 months",
-    price: "₹7,600",
+    duration: "5 months",
+    price: "₹10,000",
   },
   {
     title: "Speaking English Course",
@@ -94,7 +94,7 @@ const CoursesData = [
       "Mock Interview & technique",
     ],
     duration: "3 months",
-    price: "₹7,300",
+    price: "₹13,500",
   },
   {
     title: "GDPI or Interview training",
@@ -104,7 +104,7 @@ const CoursesData = [
       "Mock Interview & technique",
     ],
     duration: "upto 1 month",
-    price: "6,000",
+    price: "7,000",
   },
 ];
 
