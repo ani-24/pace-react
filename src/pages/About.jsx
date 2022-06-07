@@ -50,8 +50,8 @@ const AboutMentor = () => {
           quo praesentium, eaque accusantium vel. Debitis veniam beatae ab saepe
           ex maxime facilis molestiae.
         </p>
-        <video src="./img/hero-video.mp4" controls></video>
       </p>
+      <video src="./img/hero-video.mp4" controls></video>
     </section>
   );
 };

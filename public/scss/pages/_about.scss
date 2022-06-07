@@ -25,9 +25,17 @@
       margin-top: 1em;
     }
   }
+  video {
+    width: 100%;
+    margin-top: 1em;
+    display: block;
+  }
   @media (min-width: 1000px) {
     width: 70%;
     margin: 30px auto;
+    video {
+      width: 75%;
+    }
   }
   .personality-list {
     margin-top: 0.5em;
