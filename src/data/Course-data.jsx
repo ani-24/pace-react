@@ -18,24 +18,6 @@ const CoursesData = [
     price: "₹13,500",
   },
   {
-    title: "English tutorials for school or college students",
-    items: [
-      "Full Grammar from basic to advance",
-      "Descriptive English",
-      "Textbook English",
-      "Vocabulary building",
-      "Assignments and checking",
-      "Speaking English in right accent",
-      "Fluent and confident orator ",
-      "Public speaking like debate, group discussion, etc.",
-      "Personality development training",
-      "Interview technique",
-      "Doubt clearing and back up classes.",
-    ],
-    duration: "(as per requirement)",
-    price: "(variable)",
-  },
-  {
     title: "Guaranteed Overall English Course",
     items: [
       "Full grammar from basic to advance.",
@@ -105,6 +87,24 @@ const CoursesData = [
     ],
     duration: "upto 1 month",
     price: "7,000",
+  },
+  {
+    title: "English tutorials for school or college students",
+    items: [
+      "Full Grammar from basic to advance",
+      "Descriptive English",
+      "Textbook English",
+      "Vocabulary building",
+      "Assignments and checking",
+      "Speaking English in right accent",
+      "Fluent and confident orator ",
+      "Public speaking like debate, group discussion, etc.",
+      "Personality development training",
+      "Interview technique",
+      "Doubt clearing and back up classes.",
+    ],
+    duration: "(as per requirement)",
+    price: "(variable)",
   },
 ];
 
