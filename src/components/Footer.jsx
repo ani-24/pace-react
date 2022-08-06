@@ -13,34 +13,27 @@ const Footer = () => {
           <div className="column address">
             <div className="column-heading">Address</div>
             <div className="column-body">
-              <ul>
-                <li>
-                  PACE tower, opposite Jyoti Raj complex, 90 feet Road,
-                  Kankarbagh, Patna. 800020
-                </li>
-                <li>
-                  1st floor , Jagdamba Towers, Sahdeo Mahto marg, Boring Road,
-                  Patna-800001
-                </li>
-                <li>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14394.130711601798!2d85.157266!3d25.58721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97f67e31741abb0!2sPACE%20Institute%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1628132403903!5m2!1sen!2sin"
-                    className="map"
-                    allowFullScreen=""
-                    loading="lazy"
-                    style={mapStyle}
-                  ></iframe>
-                </li>
-                <li>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d460512.0513559904!2d85.099725!3d25.613209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x231364db43a67516!2sPace%20Institute%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1628132450872!5m2!1sen!2sin"
-                    className="map"
-                    allowFullScreen=""
-                    loading="lazy"
-                    style={mapStyle}
-                  ></iframe>
-                </li>
-              </ul>
+              <p>
+                <b>Main Center with Exclusive Facilities:</b>
+              </p>
+              <p>
+                PACE tower, opposite Jyoti Raj complex, 90 feet Road,
+                Kankarbagh, Patna. 800020
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57576.52284640719!2d85.157266!3d25.58721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf97f67e31741abb0!2sPACE%20Institute%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1659761069827!5m2!1sen!2sin"
+                style={{ border: 0, marginBottom: "1em" }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p>
+                <b>Our Branch:</b>
+              </p>
+              <p>
+                1st floor, Jagdamba Towers, Sahdeo Mahto marg, Boring Road,
+                Patna-800001
+              </p>
             </div>
           </div>
           <div className="column links">
@@ -71,7 +64,8 @@ const Footer = () => {
             <div className="column-body">
               <a href="http://on-app.in/app/home/iiddy">
                 <img
-                  src="./img/android-download.png"x
+                  src="./img/android-download.png"
+                  x
                   className="app-download-img"
                   alt=""
                 />

@@ -315,6 +315,9 @@
   width: 100%;
   left: 0;
 }
+.footer .footer-top .column .column-body p {
+  margin-bottom: 0.5em;
+}
 .footer .footer-top .column .column-body.address .map {
   border: 0;
   width: 100%;
